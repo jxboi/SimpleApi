@@ -15,7 +15,7 @@ namespace SimpleApi.Test
             var temp = ((SimpleApi.WeatherForecast[])returnValue)[0].TemperatureC;
             Console.WriteLine($"value: {temp}");
              
-            Assert.IsType(typeof(Int32), temp);
+            Assert.IsType(typeof(string), temp);
         }
 
         [Fact]
